@@ -1,0 +1,17 @@
+.form {
+    display: flex;
+    &__search {
+        width: 530px;
+        height: 40px;
+        border-radius: 5px 0 0 5px;
+        border: none;
+        outline: none;
+    }
+    &__btn {
+        width: 73px;
+        height: 40px;
+        background: #EB6F4C;
+        border-radius: 0px 5px 5px 0px;
+        border: none;
+    }
+}
