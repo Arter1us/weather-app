@@ -14,7 +14,7 @@ const Header = () => {
                     <div className="logo__title">Weather App</div>
                 </div>
                 <SearchForm />
-                <button className="btn">°C / °F</button>
+                <button type="submit" className="btn">°C / °F</button>
             </div>
         </div>
     );

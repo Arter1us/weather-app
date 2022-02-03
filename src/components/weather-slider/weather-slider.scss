@@ -1,0 +1,24 @@
+.settings {
+    max-width: 922px;
+}
+
+.weather {
+    &__time {
+        margin: 0 auto 15px;
+        font-size: 32px;
+        line-height: 37px;
+        text-align: center;
+        color: rgba(52, 58, 64, 0.8);
+    }
+    &__icon {
+            display: block;
+            margin: 0 auto 15px;
+    }
+    &__temp {
+        margin: 0 auto;
+        font-size: 32px;
+        line-height: 37px;
+        text-align: center;
+        color: #343A40;
+    }
+}

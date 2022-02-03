@@ -1,0 +1,19 @@
+.city {
+    width: 256px;
+    margin-right: 142px;
+    &__name {
+        font-size: 32px;
+        line-height: 37px;
+        color: #343A40;
+    }
+    &__date {
+        font-size: 18px;
+        line-height: 21px;
+        color: rgba(52, 58, 64, 0.9);
+    }
+    &__temperature {
+        font-size: 96px;
+        line-height: 112px;
+        color: #343A40;
+    }
+}
