@@ -14,7 +14,18 @@ export default class WeatherService {
 
     getCity = async (id) => {
         const city = await this.getResource(id);
-        return city;
+        return this._getTransformCity(city);
+    }
+
+    _getTransformCity = (city) => {
+        return {
+            name: city.name,
+            clouds: city.clouds.all,
+            humidity: city.main.humidity,
+            windSpeed: city.wind.speed,
+            visibility: city.visibility,
+            pressure: city.main.pressure
+        }
     }
 
 }
