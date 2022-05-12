@@ -5,10 +5,10 @@ import WeatherSlider from '../weather-slider';
 
 import "./weather-display.scss";
 
-const WeatherDisplay = () => {
+const WeatherDisplay = ({ data }) => {
     return (
         <div className="container display">
-            <WeatherCity />
+            <WeatherCity data={data} />
             <WeatherSlider />
         </div>
     );

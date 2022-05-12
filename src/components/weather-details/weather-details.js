@@ -19,7 +19,7 @@ const WeatherDetails = () => {
 
     const updateCity = () => {
         onCityLoading();
-        weatherService.getCity("London")
+        weatherService.getCity("51.5073219", "-0.1276474")
             .then(onCityLoaded)
             .catch(onError);
     };
@@ -52,7 +52,7 @@ const WeatherDetails = () => {
 const View = ({ city }) => {
     return (
         <div className="container">
-            <h2 className="details__title">{city.name}</h2>
+            {/* <h2 className="details__title">{console.log(city)}</h2> */}
             <div className="details__wrapper">
                 <div className="details__element">
                     <div className="details__title">Clouds</div>

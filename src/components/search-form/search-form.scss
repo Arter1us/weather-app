@@ -1,17 +1,50 @@
-.form {
-    display: flex;
-    &__search {
+.search {
+    &__form {
+        display: flex;
+    }
+
+    &__wrapper {
+        position: absolute;
+        width: 530px;
+    }
+
+    &__list {
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        padding-left: 0;
+        border: 1px solid #b3acac;
+    }
+
+    &__city {
+        list-style-type: none;
+        padding: 5px 20px;
+        cursor: pointer;
+        background-color: #d4c9c4;
+        color: #fff;
+    }
+
+    &__input {
         width: 530px;
         height: 40px;
         border-radius: 5px 0 0 5px;
         border: none;
         outline: none;
     }
+
     &__btn {
         width: 73px;
-        height: 40px;
+        height: 41px;
         background: #EB6F4C;
         border-radius: 0px 5px 5px 0px;
         border: none;
     }
+}
+
+.error {
+    color: red
+}
+
+.hide {
+    display: none;
 }
